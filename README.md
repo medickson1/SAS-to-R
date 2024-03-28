@@ -22,3 +22,4 @@ Next we can do a quick look at the **Average Age** broken down by Year and Gende
 
 `EMS_years <- EMS_test %>% group_by(MMWR_Year, Gender) %>% summarise(avg_age = mean(Age, na.rm=TRUE), .groups="drop")`
 
+
