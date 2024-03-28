@@ -7,3 +7,4 @@
 
  `EMS_test <- as.data.table(read_excel("~/Data_24/EMS_Tableau_Weekly.xlsx", sheet = "EMS_Tableau_Weekly"))`
 
+`EMS_years <- EMS_test %>% group_by(MMWR_Year, Gender) %>% summarise(avg_age = mean(Age, na.rm=TRUE), .groups="drop")`
