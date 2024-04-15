@@ -18,8 +18,6 @@ Next, we will grab the EMS Weekly data collection and name it "EMS_test"
 
 Loading in CSV files is a _bit easier_ but for excel, you will need to know the name of each sheet you are pulling in. For this example, there is only one!
 
-Next we can do a quick look at the **Average Age** broken down by Year and Gender. 
-
-`EMS_years <- EMS_test %>% group_by(MMWR_Year, Gender) %>% summarise(avg_age = mean(Age, na.rm=TRUE), .groups="drop")`
+Next we can go more indepth in R looking at the test data from the EMS dataset!
 
 
